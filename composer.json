@@ -26,7 +26,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Akash\\BsfSpacex\\": "includes/"
+            "Akash\\BsfSpacex\\": "includes/",
+            "Akash\\BsfSpacex\\Tests\\": "tests/phpunit/"
         }
     },
     "scripts": {
@@ -35,6 +36,12 @@
         ],
         "phpcbf": [
             "phpcbf -p"
+        ],
+        "test": [
+            "vendor/bin/phpunit"
+        ],
+        "test:all": [
+            "phpcs -p -s & vendor/bin/phpunit"
         ]
     }
 }
