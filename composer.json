@@ -1,0 +1,40 @@
+{
+    "name": "akash/bsf-spacex",
+    "description": "WordPress plugin for Fullstack WordPress Development test",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "ManiruzzamanAkash",
+            "email": "manirujjamanakash@gmail.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+        "tareq1988/wp-php-cs-fixer": "dev-master",
+        "phpcompatibility/phpcompatibility-wp": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Akash\\BsfSpacex\\": "includes/"
+        }
+    },
+    "scripts": {
+        "phpcs": [
+            "phpcs -p -s"
+        ],
+        "phpcbf": [
+            "phpcbf -p"
+        ]
+    }
+}
