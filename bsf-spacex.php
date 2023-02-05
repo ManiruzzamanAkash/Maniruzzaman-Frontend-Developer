@@ -208,6 +208,7 @@ final class Bsf_Spacex {
      */
     public function includes(): void {
         $this->container['assets'] = new Akash\BsfSpacex\Assets\BlockAsset();
+        $this->container['api'] = new Akash\BsfSpacex\REST\Api();
     }
 
     /**
