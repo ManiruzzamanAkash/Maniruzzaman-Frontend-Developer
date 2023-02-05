@@ -1,0 +1,23 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"title": "Spacex Data",
+	"name": "bsf-spacex/spacex-data",
+	"category": "formatting",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Spacex Data title"
+		}
+	},
+	"example": {
+		"attributes": {
+			"title": "Spacex Data title"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}
