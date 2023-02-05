@@ -207,7 +207,7 @@ final class Bsf_Spacex {
      * @return void
      */
     public function includes(): void {
-        //
+        $this->container['assets'] = new Akash\BsfSpacex\Assets\BlockAsset();
     }
 
     /**

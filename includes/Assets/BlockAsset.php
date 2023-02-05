@@ -1,6 +1,6 @@
 <?php
 
-namespace Akash\BsfSpacex\Assets\Asset;
+namespace Akash\BsfSpacex\Assets;
 
 defined( 'ABSPATH' ) || exit;
 
