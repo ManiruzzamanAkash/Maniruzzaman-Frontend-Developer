@@ -1,0 +1,9 @@
+/*
+    Author: Maniruzzaman Akash
+    File: main.css
+    Description: This file is responsible to add css to globally.
+*/
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: 1000px !important;
+}
