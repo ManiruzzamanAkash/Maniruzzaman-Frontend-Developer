@@ -1,0 +1,33 @@
+.bsf-spacex-pagination {
+  display: flex;
+  justify-content: space-between;
+
+  .pagination-prev-next {
+    button {
+      background: #0891b2;
+      padding: 10px 20px;
+      border: 0px solid transparent;
+      margin-left: 10px;
+      color: #fff;
+      cursor: pointer;
+      margin-bottom: 4px;
+      min-width: 120px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:disabled {
+        background: #ccc;
+        color: #000;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .total-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
