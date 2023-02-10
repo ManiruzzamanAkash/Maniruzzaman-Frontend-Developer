@@ -26,7 +26,6 @@ abstract class BaseRestController extends WP_REST_Controller {
      * @return bool
      */
     public function check_permission(): bool {
-//        return true;
         return current_user_can( 'manage_options' );
     }
 

@@ -75,7 +75,12 @@ class CapsulesController extends BaseRestController {
 
         foreach ( $params as $key => $value ) {
             if ( isset( $request[ $key ] ) ) {
-                $filters[ $key ] = $request[ $key ];
+                if ( 'page' === $key ) {
+                    $limit = isset ( $request['limit'] ) ? absint( $request['limit'] ) : 10;
+                    $filters[ 'offset' ] = ( absint( $request[ $key ] ) - 1 ) * $limit;
+                } else {
+                    $filters[ $key ] = $request[ $key ];
+                }
             }
         }
 
@@ -119,24 +124,24 @@ class CapsulesController extends BaseRestController {
             'type'       => 'object',
             'properties' => [
                 'capsule_serial'    => [
-                    'description' => __('Serial number of the capsule', 'bsf-spacex'),
+                    'description' => __( 'Serial number of the capsule', 'bsf-spacex' ),
                     'type'        => 'string'
                 ],
                 'capsule_id' => [
-                    'description' => __('Unique identifier for the capsule', 'bsf-spacex'),
+                    'description' => __( 'Unique identifier for the capsule', 'bsf-spacex' ),
                     'type'        => 'string'
                 ],
                 'status' => [
-                    'description' => __('Current status of the capsule', 'bsf-spacex'),
+                    'description' => __( 'Current status of the capsule', 'bsf-spacex' ),
                     'type'        => 'string'
                 ],
                 'original_launch' => [
-                    'description' => __('Original launch date of the capsule', 'bsf-spacex'),
+                    'description' => __( 'Original launch date of the capsule', 'bsf-spacex' ),
                     'type'        => 'string',
                     'format'      => 'date-time'
                 ],
                 'original_launch_unix' => [
-                    'description' => __('Original launch date of the capsule in Unix time format', 'bsf-spacex'),
+                    'description' => __( 'Original launch date of the capsule in Unix time format', 'bsf-spacex' ),
                     'type'        => 'integer'
                 ],
                 'missions' => [
@@ -235,26 +240,52 @@ class CapsulesController extends BaseRestController {
     }
 
     /**
-     * Retrieves the query params for collections.
-     *
+     * Get collection pamara
+     * 
      * @since 0.0.1
      *
      * @return array
      */
     public function get_collection_params(): array {
-        $params = parent::get_collection_params();
-
-        $params['search']['default']  = '';
-        $params['limit']['default']   = 10;
-        $params['offset']['default']  = 0;
-        $params['status']['default']  = '';
-        $params['sort']['default']  = 'capsule_serial';
-        $params['order']['default']  = 'desc';
-
-        if ( $params['limit'] <= 0 ) {
-            $params['limit'] = 1;
-        }
-
-        return $params;
+        return [
+            'context'  => $this->get_context_param(),
+            'limit' => [
+                'description'       => __( 'Maximum number of items to be returned in result set.', 'bsf-spacex' ),
+                'type'              => 'integer',
+                'default'           => 10,
+                'minimum'           => 1,
+                'maximum'           => 100,
+                'sanitize_callback' => 'absint',
+                'validate_callback' => 'rest_validate_request_arg',
+            ],
+            'status'   => [
+                'description'       => __( 'Status items to be returned in result set.' ),
+                'type'              => 'string',
+                'default'           => '',
+                'sanitize_callback' => 'sanitize_text_field',
+                'validate_callback' => 'rest_validate_request_arg',
+            ],
+            'type'   => [
+                'description'       => __( 'Type items to be returned in result set.' ),
+                'type'              => 'string',
+                'default'           => '',
+                'sanitize_callback' => 'sanitize_text_field',
+                'validate_callback' => 'rest_validate_request_arg',
+            ],
+            'mission'   => [
+                'description'       => __( 'Mission items to be returned in result set.' ),
+                'type'              => 'string',
+                'sanitize_callback' => 'sanitize_text_field',
+                'validate_callback' => 'rest_validate_request_arg',
+            ],
+            'page'     => [
+                'description'       => __( 'Current page of the collection.' ),
+                'type'              => 'integer',
+                'default'           => 1,
+                'sanitize_callback' => 'absint',
+                'validate_callback' => 'rest_validate_request_arg',
+                'minimum'           => 1,
+            ],
+        ];
     }
 }

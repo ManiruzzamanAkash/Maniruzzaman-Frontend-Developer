@@ -80,9 +80,9 @@ class CapsulesRepository
      *
      * @since 0.0.1
      *
-     * @return object $headers
+     * @return null|object $headers
      */
-    public function get_capsules_header(): object {
+    public function get_capsules_header(): ?object {
         return $this->response['headers'];
     }
 
@@ -95,6 +95,10 @@ class CapsulesRepository
      * @return $this
      */
     public function set_api_url_by_filtering( array $filters = [] ): self {
+        if ( isset( $filters['page'] ) ) {
+            unset( $filters['page'] );
+        }
+
         if ( ! empty( $filters ) ) {
             $this->api_url .= '?' . http_build_query( $filters );
         }
