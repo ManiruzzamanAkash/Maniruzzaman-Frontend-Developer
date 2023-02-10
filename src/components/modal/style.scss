@@ -1,0 +1,36 @@
+.bsf-spacex-modal {
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 50;
+  min-width: 500px;
+  padding: 30px 20px;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+
+    .modal-close {
+      text-align: right;
+
+      button {
+        border: 0px;
+        background: transparent;
+        color: #ccc;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer !important;
+      }
+    }
+
+    .modal-title {
+      font-size: 1.8rem;
+      margin: 5px 0px;
+    }
+  }
+}
