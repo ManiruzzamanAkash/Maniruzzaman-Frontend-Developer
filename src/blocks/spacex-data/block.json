@@ -5,19 +5,51 @@
 	"name": "bsf-spacex/spacex-data",
 	"category": "formatting",
 	"attributes": {
-		"title": {
+		"searchTextLabel": {
 			"type": "string",
-			"default": "Spacex Data title"
+			"default": "Search"
+		},
+		"previousTextLabel": {
+			"type": "string",
+			"default": "Previous"
+		},
+		"nextTextLabel": {
+			"type": "string",
+			"default": "Next"
+		},
+		"buttonColorBg": {
+			"type": "string",
+			"default": "#0891b2"
+		},
+		"buttonColorText": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"colorBgSecondary": {
+			"type": "string",
+			"default": "#ccc"
+		},
+		"colorTextSecondary": {
+			"type": "string",
+			"default": "#000"
 		}
 	},
 	"example": {
 		"attributes": {
-			"title": "Spacex Data title"
+			"searchText": "Search",
+			"previousTextLabel": "Previous",
+			"nextTextLabel": "Next",
+			"buttonColorBg": "#0891b2",
+			"buttonColorText": "#fff",
+			"colorBgSecondary": "#ccc",
+			"colorTextSecondary": "000"
 		}
 	},
 	"supports": {
 		"html": false
 	},
 	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"viewScript": "file:./view.js",
 	"style": "file:./style-index.css"
 }
