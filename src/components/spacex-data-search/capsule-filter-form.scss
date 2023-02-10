@@ -1,0 +1,37 @@
+.capsule-filter-form {
+  text-align: center;
+  background: #fff;
+  box-shadow: 10px 10px 20px 10px #cccccc38;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+
+  input, select, button {
+    background: #fff;
+    padding: 15px 20px;
+    border: 0;
+    min-width: 165px;
+    color: darkslategray;
+
+    &:click, &:focus, &:focus-visible {
+      border: 0;
+      outline: 0 !important;
+    }
+  }
+
+  .search-button {
+    margin: 3px 4px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  button[type="submit"] {
+    background: #0891b2;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    place-self: end;
+    min-width: 50px;
+  }
+}
