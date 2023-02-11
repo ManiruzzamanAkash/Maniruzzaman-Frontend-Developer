@@ -14,7 +14,8 @@ if ( ! is_user_logged_in() ) : ?>
         <p class="login-hint"><?php esc_html_e( 'Please login to view the capsules...', 'bsf-spacex' ); ?></p>
         <?php wp_login_form(); ?>
     </div>
-<?php else:
+    <?php
+else :
     $search_text_label = $attributes['searchTextLabel'] ?? '';
     $previous_text_label = $attributes['previousTextLabel'] ?? '';
     $next_text_label = $attributes['nextTextLabel'] ?? '';
@@ -37,4 +38,3 @@ if ( ! is_user_logged_in() ) : ?>
     >
     </div>
 <?php endif; ?>
-

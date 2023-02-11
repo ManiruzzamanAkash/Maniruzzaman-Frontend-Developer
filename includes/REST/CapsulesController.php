@@ -29,13 +29,13 @@ class CapsulesController extends BaseRestController {
      *
      * @var CapsulesRepository
      */
-    private CapsulesRepository $capsulesRepository;
+    private CapsulesRepository $capsules_repository;
 
     /**
      * Class constructor.
      */
     public function __construct() {
-        $this->capsulesRepository = new CapsulesRepository();
+        $this->capsules_repository = new CapsulesRepository();
     }
 
     /**
@@ -76,16 +76,16 @@ class CapsulesController extends BaseRestController {
         foreach ( $params as $key => $value ) {
             if ( isset( $request[ $key ] ) ) {
                 if ( 'page' === $key ) {
-                    $limit = isset ( $request['limit'] ) ? absint( $request['limit'] ) : 10;
-                    $filters[ 'offset' ] = ( absint( $request[ $key ] ) - 1 ) * $limit;
+                    $limit = isset( $request['limit'] ) ? absint( $request['limit'] ) : 10;
+                    $filters['offset'] = ( absint( $request[ $key ] ) - 1 ) * $limit;
                 } else {
                     $filters[ $key ] = $request[ $key ];
                 }
             }
         }
 
-        $capsule_response = $this->capsulesRepository
-                        ->set_api_url_by_filtering($filters)
+        $capsule_response = $this->capsules_repository
+                        ->set_api_url_by_filtering( $filters )
                         ->set_capsule_response();
 
         $capsules_data = $capsule_response->get_capsules_data();
@@ -125,24 +125,24 @@ class CapsulesController extends BaseRestController {
             'properties' => [
                 'capsule_serial'    => [
                     'description' => __( 'Serial number of the capsule', 'bsf-spacex' ),
-                    'type'        => 'string'
+                    'type'        => 'string',
                 ],
                 'capsule_id' => [
                     'description' => __( 'Unique identifier for the capsule', 'bsf-spacex' ),
-                    'type'        => 'string'
+                    'type'        => 'string',
                 ],
                 'status' => [
                     'description' => __( 'Current status of the capsule', 'bsf-spacex' ),
-                    'type'        => 'string'
+                    'type'        => 'string',
                 ],
                 'original_launch' => [
                     'description' => __( 'Original launch date of the capsule', 'bsf-spacex' ),
                     'type'        => 'string',
-                    'format'      => 'date-time'
+                    'format'      => 'date-time',
                 ],
                 'original_launch_unix' => [
                     'description' => __( 'Original launch date of the capsule in Unix time format', 'bsf-spacex' ),
-                    'type'        => 'integer'
+                    'type'        => 'integer',
                 ],
                 'missions' => [
                     'description' => __( 'List of missions for the capsule.', 'bsf-spacex' ),
@@ -204,11 +204,11 @@ class CapsulesController extends BaseRestController {
         $schema = $this->get_item_schema();
         $properties = $schema['properties'];
 
-        foreach ($data as $key => $value) {
-            if (isset($properties[$key])) {
-                $data[$key] = $value;
+        foreach ( $data as $key => $value ) {
+            if ( isset( $properties[ $key ] ) ) {
+                $data[ $key ] = $value;
             } else {
-                unset($data[$key]);
+                unset( $data[ $key ] );
             }
         }
 
@@ -241,7 +241,7 @@ class CapsulesController extends BaseRestController {
 
     /**
      * Get collection pamara
-     * 
+     *
      * @since 0.0.1
      *
      * @return array
@@ -259,27 +259,27 @@ class CapsulesController extends BaseRestController {
                 'validate_callback' => 'rest_validate_request_arg',
             ],
             'status'   => [
-                'description'       => __( 'Status items to be returned in result set.' ),
+                'description'       => __( 'Status items to be returned in result set.', 'bsf-spacex' ),
                 'type'              => 'string',
                 'default'           => '',
                 'sanitize_callback' => 'sanitize_text_field',
                 'validate_callback' => 'rest_validate_request_arg',
             ],
             'type'   => [
-                'description'       => __( 'Type items to be returned in result set.' ),
+                'description'       => __( 'Type items to be returned in result set.', 'bsf-spacex' ),
                 'type'              => 'string',
                 'default'           => '',
                 'sanitize_callback' => 'sanitize_text_field',
                 'validate_callback' => 'rest_validate_request_arg',
             ],
             'mission'   => [
-                'description'       => __( 'Mission items to be returned in result set.' ),
+                'description'       => __( 'Mission items to be returned in result set.', 'bsf-spacex' ),
                 'type'              => 'string',
                 'sanitize_callback' => 'sanitize_text_field',
                 'validate_callback' => 'rest_validate_request_arg',
             ],
             'page'     => [
-                'description'       => __( 'Current page of the collection.' ),
+                'description'       => __( 'Current page of the collection.', 'bsf-spacex' ),
                 'type'              => 'integer',
                 'default'           => 1,
                 'sanitize_callback' => 'absint',

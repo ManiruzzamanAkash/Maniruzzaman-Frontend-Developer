@@ -7,8 +7,7 @@ namespace Akash\BsfSpacex\Repository;
  *
  * @since 0.0.1
  */
-class CapsulesRepository
-{
+class CapsulesRepository {
     /**
      * Capsule base URL.
      */
@@ -31,8 +30,7 @@ class CapsulesRepository
     /**
      * Class constructor.
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->api_url = self::CAPSULE_BASE_URL;
         $this->response = [
             'data'    => [],

@@ -40,8 +40,7 @@ abstract class BaseRestController extends WP_REST_Controller {
      *
      * @return object
      */
-    public function format_collection_response( $response, $request, $total_items ): object
-    {
+    public function format_collection_response( $response, $request, $total_items ): object {
         if ( $total_items === 0 ) {
             return $response;
         }
