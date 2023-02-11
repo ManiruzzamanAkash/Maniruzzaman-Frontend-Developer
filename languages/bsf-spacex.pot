@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-02-11T11:15:32+00:00\n"
+"POT-Creation-Date: 2023-02-11T11:19:59+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: bsf-spacex\n"
@@ -81,218 +81,215 @@ msgstr ""
 msgid "Please login to view the capsules..."
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:151
-msgid "Text labels"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:155
-msgid "Search button text label"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:162
-msgid "Pagination Previous text label"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:169
-msgid "Pagination Next text label"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:175
-msgid "Color Settigs"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:179
-msgid "Button background color"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:187
-msgid "Button text color"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:195
-msgid "Secondary background color"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:203
-msgid "Secondary text color"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:381
-#: build/blocks/spacex-data/view.js:89
-msgid "Landed"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:381
-#: build/blocks/spacex-data/view.js:89
-msgid "times"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:385
-#: build/blocks/spacex-data/view.js:93
-msgid "Missions"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:388
-#: build/blocks/spacex-data/view.js:96
-msgid "Mission name"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:388
-#: build/blocks/spacex-data/view.js:96
-msgid "Flight no"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:390
-#: build/blocks/spacex-data/view.js:98
-msgid "No missions found !"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:394
-#: build/blocks/spacex-data/view.js:102
-msgid "Details"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:398
-#: build/blocks/spacex-data/view.js:106
-msgid "Launched "
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:444
-#: build/blocks/spacex-data/view.js:152
-msgid "No capsules found !"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:444
-#: build/blocks/spacex-data/view.js:152
-msgid "Please search again or,"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:448
-#: build/blocks/spacex-data/view.js:156
-msgid "Reset Filter"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:485
-#: build/blocks/spacex-data/view.js:268
-#: build/blocks/spacex-data/view.js:3742
-msgid "Previous"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:486
-#: build/blocks/spacex-data/view.js:269
-#: build/blocks/spacex-data/view.js:3743
-msgid "Next"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:495
-#: build/blocks/spacex-data/view.js:278
-msgid "Page"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:497
-#: build/blocks/spacex-data/view.js:280
-msgid "Showing"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:497
-#: build/blocks/spacex-data/view.js:280
-msgid "items"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:543
-#: build/blocks/spacex-data/view.js:326
-#: build/blocks/spacex-data/view.js:3741
-msgid "Search"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:564
-#: build/blocks/spacex-data/view.js:347
-msgid "Status"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:575
-#: build/blocks/spacex-data/view.js:358
-msgid "Mission"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:586
-#: build/blocks/spacex-data/view.js:369
-msgid "Type"
-msgstr ""
-
-#: build/blocks/spacex-data/index.js:714
-#: build/blocks/spacex-data/view.js:497
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "All statuses"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:715
-#: build/blocks/spacex-data/view.js:498
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "Active"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:716
-#: build/blocks/spacex-data/view.js:499
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "Retired"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:717
-#: build/blocks/spacex-data/view.js:500
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "Destroyed"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:718
-#: build/blocks/spacex-data/view.js:501
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "Unknown"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:721
-#: build/blocks/spacex-data/view.js:504
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "All types"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:722
-#: build/blocks/spacex-data/view.js:505
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "Dragon 1.0"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:723
-#: build/blocks/spacex-data/view.js:506
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "Dragon 1.1"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:724
-#: build/blocks/spacex-data/view.js:507
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "Dragon 2.0"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:727
-#: build/blocks/spacex-data/view.js:510
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "All missions"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:728
-#: build/blocks/spacex-data/view.js:511
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "COTS 1"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:729
-#: build/blocks/spacex-data/view.js:512
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "COTS 2"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:730
-#: build/blocks/spacex-data/view.js:513
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "CRS-1"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:731
-#: build/blocks/spacex-data/view.js:514
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "CRS-2"
 msgstr ""
 
-#: build/blocks/spacex-data/index.js:732
-#: build/blocks/spacex-data/view.js:515
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
 msgid "CRS-3"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Search"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Status"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Mission"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Type"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Landed"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "times"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Missions"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Mission name"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Flight no"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "No missions found !"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Details"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Launched "
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Previous"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Next"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Page"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Showing"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "items"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "No capsules found !"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Please search again or,"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+#: build/blocks/spacex-data/view.js:1
+msgid "Reset Filter"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Text labels"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Search button text label"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Pagination Previous text label"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Pagination Next text label"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Color Settigs"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Button background color"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Button text color"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Secondary background color"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:1
+msgid "Secondary text color"
 msgstr ""
 
 #: build/blocks/spacex-data/block.json

@@ -2,7 +2,7 @@
   "name": "bsf-assignment",
   "version": "0.0.1",
   "description": "",
-  "main": ".babelrc.js",
+  "main": "index.tsx",
   "homepage": "https://github.com/ManiruzzamanAkash/Maniruzzaman-Frontend-Developer#readme",
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "@wordpress/scripts": "^25.3.0",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
+    "fs-extra": "^11.1.0",
     "lodash": "^4.17.21",
     "tailwindcss": "^3.2.4",
     "ts-jest": "^29.0.5",
@@ -47,6 +48,8 @@
     "env:start": "wp-env start",
     "env:start:coverage": "wp-env start -- --xdebug=profile,trace,debug",
     "env:stop": "wp-env stop",
-    "makepot": "wp i18n make-pot --domain='bsf-spacex' --exclude='node_modules,.storybook,src,vendor,assets' . --headers='{\"Last-Translator\":\"manirujjamanakash@gmail.com\",\"Report-Msgid-Bugs-To\":\"https://github.com/ManiruzzamanAkash/Maniruzzaman-Frontend-Developer/issues\"}' --file-comment=\"Copyright (c) $(date +'%Y') Maniruzzaman Akash. All Rights Reserved.\" languages/bsf-spacex.pot"
+    "makepot": "wp i18n make-pot --domain='bsf-spacex' --exclude='node_modules,src,vendor,assets' . --headers='{\"Last-Translator\":\"manirujjamanakash@gmail.com\",\"Report-Msgid-Bugs-To\":\"https://github.com/ManiruzzamanAkash/Maniruzzaman-Frontend-Developer/issues\"}' --file-comment=\"Copyright (c) $(date +'%Y') Maniruzzaman Akash. All Rights Reserved.\" languages/bsf-spacex.pot",
+    "zip": "node assets/js/zip",
+    "release": "npm run build && npm run makepot && npm run zip"
   }
 }
