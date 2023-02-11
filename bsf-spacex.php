@@ -5,7 +5,7 @@
  * Description:       WordPress plugin for Fullstack WordPress Development test
  * Requires at least: 5.8
  * Requires PHP:      7.4
- * Version:           0.0.1
+ * Version:           0.1.0
  * Tested upto:       6.1.1
  * Author:            Maniruzzaman Akash<manirujjamanakash@gmail.com>
  * License:           GPL-2.0-or-later
@@ -241,37 +241,6 @@ final class Bsf_Spacex {
             // Load wp-script translation for bsf-spacex-app
             wp_set_script_translations( 'bsf-spacex-app', 'bsf-spacex', plugin_dir_path( __FILE__ ) . 'languages/' );
         }
-    }
-
-    /**
-     * What type of request is this.
-     *
-     * @since 0.1.0
-     *
-     * @param string $type admin, ajax, cron or frontend
-     *
-     * @return bool
-     */
-    private function is_request( string $type ): bool
-    {
-        switch ( $type ) {
-            case 'admin':
-                return is_admin();
-
-            case 'ajax':
-                return defined( 'DOING_AJAX' );
-
-            case 'rest':
-                return defined( 'REST_REQUEST' );
-
-            case 'cron':
-                return defined( 'DOING_CRON' );
-
-            case 'frontend':
-                return ( ! is_admin() || defined( 'DOING_AJAX' ) ) && ! defined( 'DOING_CRON' );
-        }
-
-        return false;
     }
 }
 

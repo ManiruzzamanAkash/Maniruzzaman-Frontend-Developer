@@ -33,8 +33,6 @@ WordPress Fullstack plugin developmennt - Gutenberg block, REST API, and so many
 
 ![Frontend - Mobile responsive view](https://i.ibb.co/FghKMSg/06-mobile-view.png)
 
-
-
 ## Local development Setup Instruction
 
 ### Requirements:
@@ -111,13 +109,15 @@ npm run test:unit
 ```
 
 ## PHPUnit test result
-![Run PHPUnit Test suits](https://i.ibb.co/hdnB56H/phpunit-test.png)
+PHPCS - Passed
+PHPUnit - 15 tests, 23 assertions - Passed
 
+![Run PHPUnit Test suits](https://i.ibb.co/L62T83Y/composer-run-test-all.png)
 
 ### Jest Unit Test Result
+Jest Unit Test - 15 tests - Passed
 
 ![Run Test suits](https://i.ibb.co/0hnSvsd/jest-unit-test-result.png)
-
 
 
 ## e2e Test
