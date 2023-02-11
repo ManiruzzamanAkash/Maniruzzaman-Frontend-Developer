@@ -34,7 +34,7 @@ class CapsulesRepository {
         $this->api_url = self::CAPSULE_BASE_URL;
         $this->response = [
             'data'    => [],
-            'headers' => null,
+            'headers' => new \stdClass(),
         ];
     }
 
@@ -56,7 +56,7 @@ class CapsulesRepository {
 
         $this->response = [
             'data'    => json_decode( wp_remote_retrieve_body( $response ), true ),
-            'headers' => wp_remote_retrieve_headers( $response ),
+            'headers' => wp_remote_retrieve_headers( $response ) ?? new \stdClass(),
         ];
 
         return $this;
@@ -78,9 +78,9 @@ class CapsulesRepository {
      *
      * @since 0.0.1
      *
-     * @return null|object $headers
+     * @return object $headers
      */
-    public function get_capsules_header(): ?object {
+    public function get_capsules_header(): object {
         return $this->response['headers'];
     }
 
