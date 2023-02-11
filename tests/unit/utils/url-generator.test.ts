@@ -1,7 +1,7 @@
 /**
  * Internal dependencies.
  */
-import { buildQueryByParameters } from "../../../../src/utils/url-generator";
+import { buildQueryByParameters } from "../../../src/utils/url-generator";
 
 describe('buildQueryByParameters', () => {
     it('should build a query string from the given parameters', () => {

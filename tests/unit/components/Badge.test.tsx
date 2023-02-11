@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Badge from '../';
+import Badge from '../../../src/components/badge';
 
 describe('Badge', () => {
   it('renders the correct background color for the active status', () => {
