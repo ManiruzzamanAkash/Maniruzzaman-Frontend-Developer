@@ -19,7 +19,7 @@ import Pagination from "../../components/pagination";
 import useCapsuleFetchData from "../../hooks/use-capsule-fetch-data";
 import NoCapsule from "../../components/capsule/NoCapsule";
 
-const View = ({
+export const SpacexDataView = ({
                   searchTextLabel = '',
                   buttonStyle = {},
                   secondaryButtonStyle = {},
@@ -151,7 +151,7 @@ domReady(function () {
     const observer = new IntersectionObserver(
         function (entries) {
             render(
-                <View
+                <SpacexDataView
                     searchTextLabel={searchTextLabel}
                     buttonStyle={buttonStyle}
                     secondaryButtonStyle={buttonStyleSecondary}
