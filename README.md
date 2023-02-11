@@ -5,7 +5,7 @@ WordPress Fullstack plugin developmennt - Gutenberg block, REST API, and so many
 ---
 
 ## Demo Video
---will be added here---
+https://youtu.be/h-BJczvJWLI
 
 ## Demo Screenshots
 
