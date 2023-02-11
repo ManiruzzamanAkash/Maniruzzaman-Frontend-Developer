@@ -1,21 +1,21 @@
 /**
  * External dependencies.
  */
-import {__} from '@wordpress/i18n';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Internal dependencies.
  */
-import {missions, statuses, types} from "../../utils/spacex-data-helper";
-import {ISearch} from "../../interfaces";
+import { missions, statuses, types } from "../../utils/spacex-data-helper";
+import { ISearch } from "../../interfaces";
 
 export default function Search({
-                                   filter,
-                                   onSearched,
-                                   onFiltered,
-                                   searchText = __('Search', 'bsf-spacex'),
-                                   searchButtonstyle = {}
-                               }: ISearch) {
+    filter,
+    onSearched,
+    onFiltered,
+    searchText = __('Search', 'bsf-spacex'),
+    searchButtonstyle = {}
+}: ISearch) {
 
     const handleSearch = (e: any) => {
         e.preventDefault();
@@ -32,10 +32,13 @@ export default function Search({
     return (
         <form className="capsule-filter-form" onSubmit={handleSearch}>
             <div className="form-div-area">
-                <select className=""
-                        value={filter.status}
-                        onChange={handleChange}
-                        name="status"
+                <label htmlFor="status-select" hidden>
+                    {__('Status', 'bsf-spacex')}
+                </label>
+                <select id="status-select"
+                    value={filter.status}
+                    onChange={handleChange}
+                    name="status"
                 >
                     {
                         Object.keys(statuses).map((status, index) => (
@@ -46,10 +49,13 @@ export default function Search({
                     }
                 </select>
 
-                <select className=""
-                        value={filter.mission}
-                        onChange={handleChange}
-                        name="mission"
+                <label htmlFor="mission-select" hidden>
+                    {__('Mission', 'bsf-spacex')}
+                </label>
+                <select id="mission-select"
+                    value={filter.mission}
+                    onChange={handleChange}
+                    name="mission"
                 >
                     {
                         Object.keys(missions).map((mission, index) => (
@@ -60,10 +66,13 @@ export default function Search({
                     }
                 </select>
 
-                <select className=""
-                        name="type"
-                        value={filter.type}
-                        onChange={handleChange}
+                <label htmlFor="type-select" hidden>
+                    {__('Type', 'bsf-spacex')}
+                </label>
+                <select id="type-select"
+                    name="type"
+                    value={filter.type}
+                    onChange={handleChange}
                 >
                     {
                         Object.keys(types).map((type, index) => (

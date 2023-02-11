@@ -2,10 +2,11 @@
  * External dependencies.
  */
 import {__} from '@wordpress/i18n';
+import { IDropdown } from '../interfaces';
 
 export const CAPSULE_BASE_URL = '/bsf-spacex/v1/capsules';
 
-export const statuses = {
+export const statuses: IDropdown = {
     '': __('All statuses', 'bsf-spacex'),
     'active': __('Active', 'bsf-spacex'),
     'retired': __('Retired', 'bsf-spacex'),
@@ -13,14 +14,14 @@ export const statuses = {
     'unknown': __('Unknown', 'bsf-spacex'),
 }
 
-export const types = {
+export const types: IDropdown = {
     '': __('All types', 'bsf-spacex'),
     'Dragon 1.0': __('Dragon 1.0', 'bsf-spacex'),
     'Dragon 1.1': __('Dragon 1.1', 'bsf-spacex'),
     'Dragon 2.0': __('Dragon 2.0', 'bsf-spacex'),
 };
 
-export const missions = {
+export const missions: IDropdown = {
     '': __('All missions', 'bsf-spacex'),
     'COTS 1': __('COTS 1', 'bsf-spacex'),
     'COTS 2': __('COTS 2', 'bsf-spacex'),

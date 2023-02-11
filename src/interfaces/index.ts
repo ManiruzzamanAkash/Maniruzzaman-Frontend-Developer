@@ -11,7 +11,7 @@ export interface IMission {
 }
 
 export interface ICapsule {
-    status: string;
+    status: IStatus;
     capsule_serial: string;
     capsule_id: string;
     landings: string;
@@ -68,6 +68,12 @@ export interface ISpacexDataView {
     secondaryButtonStyle?: object;
 }
 
+export type IStatus = 'active' | 'retired' | 'unknown';
+
 export interface IBadge {
-    status: 'active' | 'retired' | 'unknown';
+    status: IStatus;
+}
+
+export interface IDropdown {
+    [key: string]: string;
 }
