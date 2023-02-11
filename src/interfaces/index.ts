@@ -69,5 +69,5 @@ export interface ISpacexDataView {
 }
 
 export interface IBadge {
-    status: string;
+    status: 'active' | 'retired' | 'unknown';
 }
