@@ -1,0 +1,301 @@
+# Copyright (c) 2023 Maniruzzaman Akash. All Rights Reserved.
+msgid ""
+msgstr ""
+"Project-Id-Version: BSF-Spacex Tests 0.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/ManiruzzamanAkash/Maniruzzaman-Frontend-Developer/issues\n"
+"Last-Translator: manirujjamanakash@gmail.com\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-02-11T11:15:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: bsf-spacex\n"
+
+#. Plugin Name of the plugin
+msgid "BSF-Spacex Tests"
+msgstr ""
+
+#. Description of the plugin
+msgid "WordPress plugin for Fullstack WordPress Development test"
+msgstr ""
+
+#. Author of the plugin
+msgid "Maniruzzaman Akash<manirujjamanakash@gmail.com>"
+msgstr ""
+
+#: includes/REST/CapsulesController.php:127
+msgid "Serial number of the capsule"
+msgstr ""
+
+#: includes/REST/CapsulesController.php:131
+msgid "Unique identifier for the capsule"
+msgstr ""
+
+#: includes/REST/CapsulesController.php:135
+msgid "Current status of the capsule"
+msgstr ""
+
+#: includes/REST/CapsulesController.php:139
+msgid "Original launch date of the capsule"
+msgstr ""
+
+#: includes/REST/CapsulesController.php:144
+msgid "Original launch date of the capsule in Unix time format"
+msgstr ""
+
+#: includes/REST/CapsulesController.php:148
+msgid "List of missions for the capsule."
+msgstr ""
+
+#: includes/REST/CapsulesController.php:154
+msgid "Name of the mission."
+msgstr ""
+
+#: includes/REST/CapsulesController.php:158
+msgid "Flight number of the mission."
+msgstr ""
+
+#: includes/REST/CapsulesController.php:165
+msgid "Number of landings for the capsule."
+msgstr ""
+
+#: includes/REST/CapsulesController.php:169
+msgid "Type of the capsule."
+msgstr ""
+
+#: includes/REST/CapsulesController.php:173
+msgid "Details about the capsule."
+msgstr ""
+
+#: includes/REST/CapsulesController.php:177
+msgid "Number of times the capsule has been reused."
+msgstr ""
+
+#: includes/REST/CapsulesController.php:253
+msgid "Maximum number of items to be returned in result set."
+msgstr ""
+
+#: templates/blocks/spacex-data/markup.php:14
+msgid "Please login to view the capsules..."
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:151
+msgid "Text labels"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:155
+msgid "Search button text label"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:162
+msgid "Pagination Previous text label"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:169
+msgid "Pagination Next text label"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:175
+msgid "Color Settigs"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:179
+msgid "Button background color"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:187
+msgid "Button text color"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:195
+msgid "Secondary background color"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:203
+msgid "Secondary text color"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:381
+#: build/blocks/spacex-data/view.js:89
+msgid "Landed"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:381
+#: build/blocks/spacex-data/view.js:89
+msgid "times"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:385
+#: build/blocks/spacex-data/view.js:93
+msgid "Missions"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:388
+#: build/blocks/spacex-data/view.js:96
+msgid "Mission name"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:388
+#: build/blocks/spacex-data/view.js:96
+msgid "Flight no"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:390
+#: build/blocks/spacex-data/view.js:98
+msgid "No missions found !"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:394
+#: build/blocks/spacex-data/view.js:102
+msgid "Details"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:398
+#: build/blocks/spacex-data/view.js:106
+msgid "Launched "
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:444
+#: build/blocks/spacex-data/view.js:152
+msgid "No capsules found !"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:444
+#: build/blocks/spacex-data/view.js:152
+msgid "Please search again or,"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:448
+#: build/blocks/spacex-data/view.js:156
+msgid "Reset Filter"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:485
+#: build/blocks/spacex-data/view.js:268
+#: build/blocks/spacex-data/view.js:3742
+msgid "Previous"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:486
+#: build/blocks/spacex-data/view.js:269
+#: build/blocks/spacex-data/view.js:3743
+msgid "Next"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:495
+#: build/blocks/spacex-data/view.js:278
+msgid "Page"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:497
+#: build/blocks/spacex-data/view.js:280
+msgid "Showing"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:497
+#: build/blocks/spacex-data/view.js:280
+msgid "items"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:543
+#: build/blocks/spacex-data/view.js:326
+#: build/blocks/spacex-data/view.js:3741
+msgid "Search"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:564
+#: build/blocks/spacex-data/view.js:347
+msgid "Status"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:575
+#: build/blocks/spacex-data/view.js:358
+msgid "Mission"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:586
+#: build/blocks/spacex-data/view.js:369
+msgid "Type"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:714
+#: build/blocks/spacex-data/view.js:497
+msgid "All statuses"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:715
+#: build/blocks/spacex-data/view.js:498
+msgid "Active"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:716
+#: build/blocks/spacex-data/view.js:499
+msgid "Retired"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:717
+#: build/blocks/spacex-data/view.js:500
+msgid "Destroyed"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:718
+#: build/blocks/spacex-data/view.js:501
+msgid "Unknown"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:721
+#: build/blocks/spacex-data/view.js:504
+msgid "All types"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:722
+#: build/blocks/spacex-data/view.js:505
+msgid "Dragon 1.0"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:723
+#: build/blocks/spacex-data/view.js:506
+msgid "Dragon 1.1"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:724
+#: build/blocks/spacex-data/view.js:507
+msgid "Dragon 2.0"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:727
+#: build/blocks/spacex-data/view.js:510
+msgid "All missions"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:728
+#: build/blocks/spacex-data/view.js:511
+msgid "COTS 1"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:729
+#: build/blocks/spacex-data/view.js:512
+msgid "COTS 2"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:730
+#: build/blocks/spacex-data/view.js:513
+msgid "CRS-1"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:731
+#: build/blocks/spacex-data/view.js:514
+msgid "CRS-2"
+msgstr ""
+
+#: build/blocks/spacex-data/index.js:732
+#: build/blocks/spacex-data/view.js:515
+msgid "CRS-3"
+msgstr ""
+
+#: build/blocks/spacex-data/block.json
+msgctxt "block title"
+msgid "Spacex Data"
+msgstr ""
