@@ -13,7 +13,7 @@ export default function Pagination({
                                        perPage = 10,
                                        pageItems,
                                        currentPage = 1,
-                                       onChangePage = (page) => {},
+                                       onChangePage = () => {},
                                        buttonStyle = {},
                                        secondaryButtonStyle = {},
                                        previousTextLabel = __('Previous', 'bsf-spacex'),
