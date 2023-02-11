@@ -14,7 +14,7 @@ export interface ICapsule {
     status: IStatus;
     capsule_serial: string;
     capsule_id: string;
-    landings: string;
+    landings: number;
     missions: Array<IMission>;
     type: string;
     original_launch: string;
